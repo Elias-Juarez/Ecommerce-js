@@ -1,0 +1,376 @@
+/*---RESETEO---*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+:root{
+    --color-celeste: rgb(134, 190, 235);
+    --color-celeste-ligth: rgb(201, 228, 250);
+    --color-white: white;
+    --color-gray: rgb(240, 235, 235);
+    --color-red: rgb(146, 9, 9);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ------ASIDE----- */
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--color-celeste);
+}
+
+aside{
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--color-white);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boton-menu{
+    background-color: transparent;
+    border: 0;
+    color: var(--color-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: .85rem;
+    width: 100%;
+}
+
+.boton-menu.active{
+    background-color: var(--color-white);
+    color: var(--color-celeste);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.boton-menu.active::before{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 var(--color-white);
+}
+
+.boton-menu.active::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 var(--color-white);
+}
+
+.boton-menu > i.bi-hand-index-fill,
+.boton-menu > i.bi-hand-index{
+    transform: rotateZ(90deg);
+}
+
+.boton-carrito{
+    margin-top: 2rem;
+}
+
+.numerito{
+    background-color: var(--color-white);
+    color: var(--color-celeste);
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+
+.boton-carrito.active .numerito{
+    background-color: var(--color-celeste);
+    color: var(--color-white);
+}
+
+
+
+/* -----FOOTER----- */
+
+
+.texto-footer{
+    color: var(--color-celeste-ligth);
+    font-size: .85rem;
+}
+
+
+/* ------MAIN------ */
+
+main{
+    background-color: var(--color-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.titulo-principal{
+    color: var(--color-celeste);
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen{
+    height: 80%;
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles{
+    background-color: var(--color-celeste);
+    color: var(--color-white);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color: var(--color-white);
+    color: var(--color-celeste);
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid var(--color-white);
+    transition: 1s;
+}
+
+.producto-agregar:hover{
+    background-color: var(--color-celeste);
+    color: var(--color-white);
+}
+
+
+/* ----CARRITO---- */
+
+
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.carrito-vacio, .carrito-comprado{
+    color: var(--color-celeste);
+
+}
+
+.carrito-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-gray);
+    color: var(--color-celeste);
+    padding: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen{
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small{
+    font-size: .75rem;
+}
+
+.carrito-producto-eliminar{
+    border: 0;
+    background-color: transparent;
+    color: var(--color-red);
+    cursor: pointer;
+}
+
+.carrito-acciones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar{
+    border: 0;
+    background-color: var(--color-gray);
+    color: var(--color-celeste);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha{
+    display: flex;
+}
+
+.carrito-acciones-total{
+    display: flex;
+    background-color: var(--color-gray);
+    color: var(--color-celeste);
+    padding: 1rem;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 1rem;
+}
+
+.carrito-acciones-comprar{
+    border: 0;
+    background-color: var(--color-celeste);
+    color: var(--color-white);
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.disabled{
+    display: none;
+}
+
+
+
+
+
+
+    
+
+
+/* -----HEADER----- */
+/* header{
+    width: 100%;
+}
+header nav{
+    background-color: rgb(13, 13, 133);
+    width: 100%;
+    margin-bottom: 20px;
+}
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav div img {
+    height: 80px;
+    width: 80px;
+    margin: 5px
+}
+nav div h1{
+    color: white;
+} */
+
+/* -----MAIN---- */
+
+/* main{
+    height: 800px;
+}
+
+
+#contenedor h1{
+    text-align: center;
+    margin: 30px;
+}
+
+#seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+#seccion div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    border: 1px gray solid;
+    border-radius: 10px;
+    margin: 30px;
+}
+#seccion img{
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#seccion b{
+    margin: 10px;
+} */
+
+
+
+
+/* -----FOOTER----- */
+
+/* footer{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(13, 13, 133);
+}
+footer p {
+    color: white;
+    font-size: 18px;
+} */
