@@ -1,0 +1,132 @@
+[
+    {
+        "id": "abrigo-01",
+        "titulo": "Abrigo 01",
+        "imagen": "./img/abrigo-01.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 7000
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Abrigo 02",
+        "imagen": "./img/abrigo-02.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 6000
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "Abrigo 03",
+        "imagen": "./img/abrigo-03.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 6000
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "Abrigo 04",
+        "imagen": "./img/abrigo-04.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "Abrigo 05",
+        "imagen": "./img/abrigo-05.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "remera-01",
+        "titulo": "Remera-01",
+        "imagen": "./img/remera-01.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "remera-02",
+        "titulo": "Remera-02",
+        "imagen": "./img/remera-02.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "remera-03",
+        "titulo": "Remera-03",
+        "imagen": "./img/remera-03.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "remera-04",
+        "titulo": "Remera-04",
+        "imagen": "./img/remera-04.jpg",
+        "categoria": {
+            "nombre": "Remeras",
+            "id": "remeras"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "pantalon-01",
+        "imagen": "./img/pantalon-01.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 4500
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "pantalon-02",
+        "imagen": "./img/pantalon-02.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 4700
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "pantalon-03",
+        "imagen": "./img/pantalon-03.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 4500
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "pantalon-04",
+        "imagen": "./img/pantalon-04.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 4700
+    }
+]
