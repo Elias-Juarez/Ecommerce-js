@@ -65,6 +65,7 @@ function cargarProductosCarrito(){
 
 cargarProductosCarrito();
 
+// BOTONES ELIMINAR
 
 function actualizarBotonesEliminar(){
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
